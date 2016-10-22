@@ -10,7 +10,7 @@ import hyeonyoung.dicegame.vo.Scores;
 
 @Service
 public class ScoreService {
-/*
+
 	@Autowired
 	Scores scores;
 
@@ -36,5 +36,4 @@ public class ScoreService {
 	public void updateScore(Scores score) throws Exception {
 		scoreDAO.update(score);
 	}
-*/
 }

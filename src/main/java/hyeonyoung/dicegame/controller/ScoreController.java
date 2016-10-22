@@ -22,9 +22,9 @@ public class ScoreController {
 	@RequestMapping(value = "/scoreview", method = RequestMethod.GET)
 	public String scoreView(Model model) throws Exception {
 
-//		List<Scores> scores = scoreService.scoreView();
+		List<Scores> scores = scoreService.scoreView();
 
-//		model.addAttribute("scores", scores);
+		model.addAttribute("scores", scores);
 
 		return "score";
 	}

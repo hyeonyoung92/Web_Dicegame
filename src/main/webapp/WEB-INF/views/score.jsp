@@ -14,7 +14,7 @@
 	</c:forEach>
 
 	<form action="/dicegame">
-		<button type="submit">Retry</button>
+		<button type="submit">Restart</button>
 	</form>
 
 </body>

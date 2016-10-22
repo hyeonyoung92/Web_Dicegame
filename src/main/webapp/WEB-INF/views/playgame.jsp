@@ -20,7 +20,7 @@ h3 {
 
 	<form name="playGame" action="/dicegame/roll" method="post">
 		<h3>[ FaceValue ]</h3>
-		<p id="user">${username} 's Face Value : ${userValue}<br> </p>
+		<p id="user">${username} 's Face Value : ${userValue}</p>
 		<p id="alpha">AlphaDice 's Face Value : ${alphaValue}</p> <br> 
 		<h3>[ Current's RollNum ]</h3>
 		<p id="user">${username} : ${curCellForUser}</p>

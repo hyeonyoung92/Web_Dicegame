@@ -34,7 +34,7 @@ public class DiceGameController {
 
 		username = (String) request.getParameter("username");
 
-//		score = scoreService.initScore(username);
+		score = scoreService.initScore(username);
 		diceService.initGame();
 		model.addAttribute("username", username);
 		model.addAttribute("userValue", status.getUserValue());
@@ -53,7 +53,7 @@ public class DiceGameController {
 		String message;
 		switch (isGameFinished) {
 		case Player:
-//			scoreService.updateScore(score.setWin(score.getWin() + 1));
+			scoreService.updateScore(score.setWin(score.getWin() + 1));
 			message = username + " Wins";
 			model.addAttribute("message", message);
 			model.addAttribute("username", username);
@@ -62,7 +62,7 @@ public class DiceGameController {
 			return "result";
 
 		case AlphaDice:
-//			scoreService.updateScore(score.setLose(score.getLose() + 1));
+			scoreService.updateScore(score.setLose(score.getLose() + 1));
 			message = "AlphaDice Wins";
 			model.addAttribute("username", username);
 			model.addAttribute("message", message);
@@ -71,7 +71,7 @@ public class DiceGameController {
 			return "result";
 
 		case Draw:
-//			scoreService.updateScore(score.setDraw(score.getDraw() + 1));
+			scoreService.updateScore(score.setDraw(score.getDraw() + 1));
 			message = "Draw";
 			model.addAttribute("username", username);
 			model.addAttribute("message", message);
